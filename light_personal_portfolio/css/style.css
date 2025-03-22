@@ -1,0 +1,255 @@
+
+
+section{
+    margin-bottom: 150px;
+}
+.container{
+    padding: 10px 10px;
+}
+
+.navbar{
+    padding: 2px 2px;
+}
+/* Light Mode (Default) */
+body {
+  background-color: white;
+  color: black;
+}
+.container{
+  margin-top: 10px;
+}
+/* Dark Mode */
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+#toggle-dark-mode{
+  border: none;
+  border-radius: 50%;
+}
+.navbar-brand{
+        /* Make the brand logo attractive */
+        font-size: 24px; /* Increase font size for emphasis */
+        font-weight: bold; /* Add boldness to the text */
+        color: #333; /* Darken the color for better contrast */
+        text-shadow: 1px 1px 2px #666; /* Add a subtle shadow */
+    
+}
+.nav-link {
+    /* Customize navigation link text */
+    color: #333; 
+    text-decoration: none;
+    
+    /* Add hover effect */
+    transition: color 0.2s ease;
+  }
+  .nav-link:hover {
+    /* Change text color on hover */
+    color: #009688;
+  }
+  .nav-link.active {
+    /* Indicate active navigation link */
+    font-weight: bold;
+    color: #009688;
+  }
+  .nav-item a{
+    font-weight: bold;
+  }
+  .nav-item{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+  }
+  #Home h1{
+    font-size: 78px;
+    z-index: 500px;
+    transform: translateY(-50px);
+     animation: fadeInBounce 1.5s forwards;
+  }
+  #Home h2{
+    font-weight: 200;
+  }
+  .sub-card{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+  .card{
+    border: 1px solid black;
+    width: 200px;
+    height: 350px;
+    border-radius: 12px;
+    text-align: center;
+    padding: 3px 5px;
+    margin-bottom: 10px;
+  }
+  .card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+  }
+  #Project h2{
+    text-align: center;
+  }
+  @media (max-width: 768px) {
+    .sub-card {
+      /* Define 2 auto-width columns for tablet */
+      grid-template-columns: auto auto;
+    }
+  }
+  
+  /* Media query for mobile (max-width: 480px) */
+  @media (max-width: 480px) {
+    .sub-card {
+      /* Define 1 auto-width column for mobile */
+      grid-template-columns: auto;
+    }
+  }
+
+.contact-detail{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+@media (max-width: 768px) {
+  .contact-detail{
+    /* Define 2 auto-width columns for tablet */
+    grid-template-columns: auto auto;
+  }
+}
+
+
+.contact{
+  border: 1px solid black;
+  padding: 10px 10px;
+  width: 300px;
+  height: 500px;
+  border-radius: 12px;
+} 
+li{
+  list-style: none;
+  margin-bottom: 5px;
+}
+.contact a{
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+}
+.row{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 600px;
+  margin: 10px 10px;
+}
+.profile-img{
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 10px;
+  z-index: 600px;
+  width: 350px;
+  height: 350px;
+}
+img{
+  width: 100%;
+}
+/* Media query for mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .contact-detail {
+    /* Define 1 auto-width column for mobile */
+    grid-template-columns: auto;
+  }
+  .profile-img{
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 10px;
+    z-index: 600px;
+    width: 150px;
+    height: 150px;
+  }
+  svg{
+    width: 22px;
+    height: 22px;
+  }
+  #Contact {
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px; /* Reduce padding */
+  }
+
+  #Contact ul {
+    flex-direction: column; /* Stack icons vertically */
+    gap: 20px; /* Reduce space between icons */
+  }
+
+  #Contact li {
+    justify-content: center; /* Center icons horizontally */
+  }
+}   
+hr{
+  border-color: purple;
+}
+
+.tool-card{
+  border: 1px solid lightgray;
+  width: 250px;
+  margin-top: 40px;
+}
+.tool-card:hover{
+  box-shadow: rgba(243, 42, 42, 0.35) 0px 5px 15px;
+}
+#Contact {
+  display: flex; /* Use flexbox for the entire section */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  padding: 20px; /* Add some padding for better spacing */
+}
+
+#Contact ul {
+  display: inline-flex; /* Keep the inline-flex for the list */
+  gap: 100px; /* Space between icons */
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+#Contact li {
+  display: flex; /* Use flexbox for list items */
+  align-items: center; /* Center the icon and text vertically */
+}
+
+#Contact li a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Set text color */
+  font-size: 16px; /* Set font size */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+#Contact li a:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+@keyframes fadeInBounce {
+  0% {
+      opacity: 0;
+      transform: translateY(-50px);
+  }
+  60% {
+      opacity: 1;
+      transform: translateY(10px);
+  }
+  80% {
+      transform: translateY(-5px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity auto ease, transform auto ease;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
